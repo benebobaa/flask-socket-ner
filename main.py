@@ -9,7 +9,7 @@ socketio = SocketIO(app, cors_allowed_origins='*')
 
 @app.route('/')
 def index():
-    return jsonify({"Choo Choo": "Welcome to your Flask app 🚅"})
+    return jsonify({"Choo Choo": "Hey jude"})
 
 @socketio.on('connect')
 def handle_connect():
